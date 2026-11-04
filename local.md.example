@@ -1,0 +1,29 @@
+# Blue Pencil: house overlay (example)
+
+Copy this file to `local.md` in the same folder and edit it. Blue Pencil reads `local.md` before
+anything else, and its rules override SKILL.md where they differ. Keep it out of version
+control: it usually holds private paths and tool names.
+
+## Language
+
+- Report language: English, whatever language the user writes in.
+- House writing rules: follow `~/notes/style-guide.md` in every rewrite.
+
+## Paths
+
+- Reports: `~/work/copy-reviews/<domain>-<YYYY-MM-DD>/` instead of `./bluepencil-reports/`.
+- Crawls: `~/work/crawls/<domain>.md`.
+- Our client sites live in `~/work/clients/<domain>/`. Read the repo as well as the crawl.
+
+## Tools
+
+- Mobile screenshot: `npx playwright screenshot --viewport-size=390,844 <url> <report>/shots/390.png`
+- Search Console: `gsc-export --site sc-domain:<domain> --page <url> --days 90 > <report>/gsc.csv`
+- Analytics: GA4 property per site is listed in `~/work/clients/<domain>/analytics.txt`.
+
+## Conventions
+
+- Product docs in our repos are called `BRIEF.md`, not `PRODUCT.md`.
+- Price data lives in `src/data/prices.json`. Check every price claim against it.
+- Before review, check that the brief describes this site and not a sister site.
+- Never name a competitor in a client report. Write "a competitor in the same town".
