@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## [1.5.0] - 2026-11-04
+
+- New `references/plain-writing.md`: the general writing standard (26 patterns with examples,
+  false positives, audit, scope), built on blader/humanizer v3.1.0 (MIT). Rewrites and report
+  prose follow it. README explains how to load it as an always-on Claude Code rule.
+- `locales/sv.md`: Swedish equivalents for the plain-writing patterns and the full spaced en dash
+  rule for Swedish client copy.
+
 - TODO: spread-test follow-up closed after the maintainer confirmed the tightened scales.
 
 - README credits list all 8 source rule sets (Turnitout-Humanizer was missing) and states their licenses.

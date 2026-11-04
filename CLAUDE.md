@@ -7,6 +7,8 @@ fourteen language rules, scores it 0-100 and proposes rewrites. Public, MIT.
 
 - `SKILL.md`: the workflow the agent follows.
 - `references/laws.md`: the ten laws, scales, language rules S1-S14 and the method rule.
+- `references/plain-writing.md`: the general writing standard (§1-§26). Also usable as an
+  always-on Claude Code rule. Keep §-numbers stable; other files cite them.
 - `references/locales/`: `sv.md` and `en.md`, language-specific rules and word lists.
 - `scripts/check.py`: mechanical pattern checker (stdlib only, Python 3.9+).
 - `tests/test_check.py`: unit tests for check.py.

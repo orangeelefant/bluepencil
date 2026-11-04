@@ -35,7 +35,8 @@ decides which candidates become findings.
 
 ## Language rules (S1-S14, apply across all laws)
 
-Merged from about 145 rules in eight open-source rule sets (see Credits in README.md). Each
+Merged from about 145 rules in eight open-source rule sets (see Credits in README.md). The
+general prose patterns these rules build on are in `plain-writing.md`, numbered §1-§26. Each
 language rule names the law its findings go to. A finding that fits no law goes under
 "Outside the laws" in the report.
 

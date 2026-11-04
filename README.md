@@ -130,6 +130,17 @@ Full checks and scales: `references/laws.md`.
 
 Locale details: `references/locales/en.md` and `references/locales/sv.md`.
 
+## Plain writing, as an always-on rule
+
+`references/plain-writing.md` is the writing standard Blue Pencil's rewrites and reports follow:
+26 patterns of chatbot prose with before and after examples, a list of false positives, and an
+audit to run before delivering text. It also works as an always-on Claude Code rule, so every
+reply, commit message and document the agent writes follows it:
+
+```bash
+ln -s ~/.claude/skills/bluepencil/references/plain-writing.md ~/.claude/rules/plain-writing.md
+```
+
 ## check.py
 
 ```bash
@@ -163,7 +174,9 @@ Group, Pew Research Center and CXL.
 
 The language rules were synthesized from a study of these eight open-source rule sets. Six are
 MIT licensed. Humanizr/Humanizer and Turnitout-Humanizer state no license GitHub can detect. The
-rules are restated in our own words, and no text was copied from any of them.
+laws and S1-S14 are restated in our own words. `references/plain-writing.md` is the exception: it
+builds on blader/humanizer v3.1.0 and copies substantial parts of its wording, under its MIT
+license (Copyright (c) 2025 Siqi Chen), which the file reproduces.
 
 - blader/humanizer
 - hardikpandya/stop-slop

@@ -4,7 +4,7 @@ description: "Review existing marketing copy against ten copywriting laws and sc
 argument-hint: "<url | file path | pasted text> [medium: page|ad|video|email]"
 user-invocable: true
 metadata:
-  version: "1.4.0"
+  version: "1.5.0"
   category: copy
 ---
 
@@ -18,7 +18,9 @@ Blue Pencil judges text that already exists. It measures the text against the te
 changes no files in the site's repo. If the text is to be rewritten afterwards, hand the report
 to a copywriting skill or a writer.
 
-Report language: the user's language. Rewrites: the page's language. Before step 3, read the
+Report language: the user's language. Rewrites: the page's language. Rewrites and the report's
+own prose follow `references/plain-writing.md`, the general writing standard (26 patterns, an audit
+and a scope). The laws and S1-S14 below are the copy-specific layer on top of it. Before step 3, read the
 locale file for the page's language in `references/locales/` (`en.md`, `sv.md`). With no locale
 file, apply the language-neutral rules and say so in the report.
 
@@ -110,7 +112,8 @@ Round the total to a whole number, with .5 rounding up.
 
 Rewrite rules:
 
-- Write in the page's language and follow its locale file.
+- Write in the page's language and follow its locale file and `references/plain-writing.md`.
+  Run that file's audit on every rewrite.
 - No invented facts about the business. If a number, a name or a review is missing, write a
   placeholder such as `[NUMBER: jobs done in 2025]` and put the question in the report's last
   section (to the client, or to whoever ordered the review if there is no client).
@@ -214,8 +217,8 @@ not repeat the table.
 - No rewrite contains a number, name or review about the business that is missing from the
   source. General facts have a source.
 - The `n/a` laws match the table in step 1 and the score is rescaled.
-- The report's own prose has no em or en dashes. Quotes are reproduced word for word, dashes
-  included.
+- The report's own prose follows `references/plain-writing.md` and has no em or en dashes.
+  Quotes are reproduced word for word, dashes included.
 
 ## Limits
 

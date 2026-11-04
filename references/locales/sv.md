@@ -22,8 +22,11 @@ title-case-heading (all S12), question-heading (S9), invisible-char (S12), long-
 | Space before percent and units | 15 %, 24 timmar, 2,3 gånger | 15%, 24h, 2,3x |
 | Swedish button labels | Skicka förfrågan, Läs mer | Submit, Read more, Book now |
 
-Dashes are allowed in Swedish client copy. The Swedish standard is a spaced en dash (" – "). An
-em dash (—) is replaced with a spaced en dash. Proper nouns and abbreviations in headings keep
+Dashes are allowed in Swedish client copy (page copy, meta descriptions, blog posts, UI text, alt
+text). The Swedish standard per Svenska skrivregler is a spaced en dash (" – "). An em dash (—)
+is replaced with a spaced en dash. Use it as a Swedish writer would: sparingly, and never as the
+universal connector. This is the locale exception to §8 in `../plain-writing.md`; other Swedish
+text (chat replies, commit messages, internal docs) keeps the full dash ban. Proper nouns and abbreviations in headings keep
 their capitals ("Städning i Göteborg", "SEO och webb").
 
 ## S3 Form of address
@@ -77,6 +80,27 @@ happens after it: "Skicka adressen, så får du ett fast pris inom 2 timmar."
   **anställda** (employees): unsupported claims are Critical under law 4.
 - Public sources for proof on external sites: Reco (reviews), Allabolag (company register, F-skatt
   status, employee count), and the page's own schema.
+
+## Plain writing in Swedish
+
+`../plain-writing.md` gives its watch lists in English. In Swedish, apply the same patterns to
+these equivalents. S6 and S7 above already cover the Swedish contrast and colon-reveal forms.
+
+| Pattern | Swedish equivalents |
+|---|---|
+| §1 Not X but Y | *inte X utan Y*, *det handlar inte om X, utan om Y* |
+| §3 Sayings that sound deep | *det handlar egentligen om*, *i grunden* |
+| §4 Staged run-up | *låt oss dyka in i*, *här är vad du behöver veta* |
+| §8 Colon reveals | *Hemligheten: rutiner.* (see S7 above for more) |
+| §12, §13, §16 AI words, inflation, sales language | *avgörande*, *banbrytande*, *levande*, *pulserande*, *i hjärtat av* |
+| §14 Vague connection | *kopplad till*, *i samband med* |
+| §17 Borrowed authority | *experter menar*, *enligt branschrapporter* |
+| §18 Avoiding is, are, has | *utgör*, *fungerar som* |
+
+§9 qualifiers that make a claim true, in Swedish: a lower bound ("från 4 900 kr"), an upper bound
+("upp till 30 %"), an approximation ("cirka 200 kunder"), a condition ("om du bokar före 1 maj")
+and a scope ("i Göteborg"). A draft that turns "Hemsida från 4 900 kr" into "Hemsida för 4 900 kr"
+breaks the claim; "från" stays because the price varies.
 
 ## Swedish examples
 
