@@ -2,6 +2,8 @@
 
 ## [Unreleased]
 
+- README ends with the shared Webraketen footer linking Portfolio, Case studies and webraketen.se.
+
 ## [1.4.0] - 2026-11-04
 
 - First public release. Ten copywriting laws with 0-10 scales, language rules S1-S14, method
