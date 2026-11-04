@@ -2,6 +2,8 @@
 
 ## [Unreleased]
 
+- TODO: spread-test follow-up closed after the maintainer confirmed the tightened scales.
+
 - README credits list all 8 source rule sets (Turnitout-Humanizer was missing) and states their licenses.
 
 - README ends with the shared Webraketen footer linking Portfolio, Case studies and webraketen.se.

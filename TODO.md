@@ -2,7 +2,7 @@
 
 ## Now
 
-- Re-run the spread test on version 1.4 to confirm the tightened scales (3 runs on 2 pages).
+- (nothing in progress)
 
 ## Next
 
@@ -15,4 +15,5 @@
 
 ## Done (recent)
 
+- 2026-11-04: spread fix for laws 3, 4, 6 and 9 confirmed by the maintainer.
 - 2026-11-04: public release 1.4.0.
