@@ -161,8 +161,9 @@ The laws draw on David Ogilvy, Claude Hopkins, John Caples, Eugene Schwartz, Gar
 Sugarman, John E. Kennedy, Michael Masterson and John Forde, E. St. Elmo Lewis, Nielsen Norman
 Group, Pew Research Center and CXL.
 
-The language rules were synthesized from a study of these open-source rule sets, all MIT
-licensed. No text was copied from them.
+The language rules were synthesized from a study of these eight open-source rule sets. Six are
+MIT licensed. Humanizr/Humanizer and Turnitout-Humanizer state no license GitHub can detect. The
+rules are restated in our own words, and no text was copied from any of them.
 
 - blader/humanizer
 - hardikpandya/stop-slop
@@ -171,6 +172,7 @@ licensed. No text was copied from them.
 - op7418/Humanizer-zh
 - epoko77-ai/im-not-ai
 - Humanizr/Humanizer
+- AhmadHassan-BTed/Turnitout-Humanizer
 
 Made by Webraketen (webraketen.se).
 

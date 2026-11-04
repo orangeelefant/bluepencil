@@ -2,6 +2,8 @@
 
 ## [Unreleased]
 
+- README credits list all 8 source rule sets (Turnitout-Humanizer was missing) and states their licenses.
+
 - README ends with the shared Webraketen footer linking Portfolio, Case studies and webraketen.se.
 
 ## [1.4.0] - 2026-11-04
