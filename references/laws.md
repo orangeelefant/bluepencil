@@ -5,7 +5,7 @@ actually sees: the mobile view for pages, the first seconds for video.
 
 Source confidence: **confirmed** means a primary source was read, or the claim comes from a
 classic book. **Unconfirmed** means the number comes from secondary sources such as agency
-blogs. Unconfirmed numbers guide the review. Do not quote them to a client as fact.
+blogs. Unconfirmed numbers guide the review. Do not quote them to a customer as fact.
 
 Each scale has four steps. In-between scores are allowed when the text falls between two
 steps (for example 2 or 5). When two steps fit at once, pick the lower one and name the
@@ -22,10 +22,10 @@ in `locales/<lang>.md`. Read the file for the page's language before step 3.
 Every finding quotes the line it is based on, word for word. No quote, no finding. The report
 never says "AI-written". It names the pattern, quotes the line and gives the fix.
 
-Pattern strength decides when a hit becomes a finding:
+Pattern strength decides when a match becomes a finding:
 
-- Strong patterns become a finding on the first hit: S1, S2, S5, S6, S11.
-- Weak patterns become a finding only at two hits on the same page, or together with another
+- Strong patterns become a finding on the first match: S1, S2, S5, S6, S11.
+- Weak patterns become a finding only at two matches on the same page, or together with another
   pattern: S4, S7, S9, S12.
 
 `scripts/check.py` finds candidates for S1, S4, S5, S6, S7, S9, S10 and S12. The reviewer
@@ -45,14 +45,14 @@ language rule names the law its findings go to. A finding that fits no law goes 
   are findings under law 4. A mechanism is a step the reader can check ("we walk through the
   flat with you before you hand back the keys"). An adjective ("with great care") or a
   guarantee is not a mechanism. Words that state scope ("all windows, inside and out") are not
-  absolute claims. Product names the client has confirmed ("100 % Satisfaction Guarantee" in
+  absolute claims. Product names that the customer has confirmed ("100 % Satisfaction Guarantee" in
   the product docs) are protected and not flagged.
 - **S2 The competitor test.** Swap the company name and town for a competitor's. If the
   sentence is still true, it is generic (law 4). Count those sentences on the first screen and
   write the count. Exception: the line that only names service, town and customer type
-  ("End-of-tenancy cleaning in Gothenburg") should be true for competitors too; it does law 1's
-  job. If you can see other sites built by the same author or agency in the same trade and
-  town, test against them too. Shared FAQs and sections, word for word, are findings.
+  ("End-of-tenancy cleaning in Gothenburg") should be true for competitors too. It does law 1's
+  job. Other sites can have the same author or agency, in the same trade and
+  town. Test against them too. Shared FAQs and sections, word for word, are findings.
 - **S3 The reader's words, the right register.** Use the word customers search for (Search
   Console). Pick the form of address for the situation, per the locale file. Change the page's
   choice only when it does not fit the reader, and give the reason. Count sentences that start
@@ -60,11 +60,11 @@ language rule names the law its findings go to. A finding that fits no law goes 
 - **S4 Stock words become the customer's words.** Tailored, one-stop shop, seamless,
   cutting-edge, next level, passionate about. "Perform/offer + noun" becomes the verb, unless
   the noun is the service name readers search for. S3 wins: if readers search for the word
-  ("bespoke website", 79 impressions on the pricing page), it stays, with a proof next to it.
+  ("bespoke website", 79 impressions on the pricing page), it stays, with evidence next to it.
   The locale file lists the stock words for each language.
 - **S5 Empty calls to action become an action.** "Don't hesitate to contact us", "If you want
-  to know more", "We look forward to hearing from you" become what the reader does and what
-  happens next (law 9).
+  to know more" and "We look forward to hearing from you" become two things. They become what
+  the reader does and what happens next (law 9).
 - **S6 State the claim directly.** "Not just X but Y" and "X, not Y" become Y. A negative line
   that removes a real risk stays ("No lock-in period" on a subscription, "No setup fee"). Judge
   each part on its own: in "No middlemen, no call centre, just the tradesperson", the risk part
@@ -72,14 +72,14 @@ language rule names the law its findings go to. A finding that fits no law goes 
 - **S7 No warm-up.** "What sets us apart is...", "The important thing is..." and colon reveals
   ("The secret: ...") become a direct statement. Colons in lists, labels and prices stay. S7 is
   a weak pattern: a single colon that carries the sender's voice ("one thing counts:") stays.
-- **S8 Sections end on a fact.** The last sentence is a fact or the next step. A slogan after a
-  proof ("It's that simple.") is cut.
+- **S8 Sections end on a fact.** The last sentence is a fact or the next step. A slogan after
+  evidence ("It's that simple.") is cut.
 - **S9 Question headings get a real answer.** "Tired of cleaning? We've got it covered."
   becomes offer, town and price (law 1).
 - **S10 Rhythm fits the situation.** In running text: no runs of three, no fragment lines, no
   even sentence length (check.py flags a standard deviation under 2.5 words). H1 and lead
-  paragraph count as running text. In USP rows, price boxes and lines next to a button, runs of
-  three, fragments and bold may stay when each part is its own fact.
+  paragraph count as running text. In USP rows, price panels and lines next to a button, runs of
+  three, fragments and bold may stay. Each part must be its own fact.
 - **S11 Every sentence has an actor.** You, we or the company. Things that act ("Quality speaks
   for itself", "The result is...") are rewritten with whoever does something. Passive voice may
   stay in lists of what is included ("The oven is cleaned"). A plain sentence that describes the
@@ -94,7 +94,7 @@ language rule names the law its findings go to. A finding that fits no law goes 
   number of windows: ..."). The qualifier rule in SKILL.md wins over S13.
 - **S14 Explain each trade term once.** Tax deductions, licences, registrations and terms like
   SEO get, at first use, what the reader gains from them, with a source. After that the term
-  stands alone (law 5). First use counts in body text; menu, footer, buttons and price lines on
+  stands alone (law 5). First use counts in body text. Menu, footer, buttons and price lines on
   the first screen do not count. The explanation goes in the first paragraph after the first
   screen. It must be complete: "the deduction halves the labour cost", not "the tax office pays
   half". A price page with several packages marks one as recommended for a named customer type
@@ -112,8 +112,8 @@ offer within 3 seconds.
 Check on the first screen (see the table in SKILL.md):
 
 - What is sold, to whom, and what the reader gets out of it. The audience is the customer type
-  (consumer, business) plus the market: the town for local services ("in Gothenburg"), the
-  country for a seller working nationwide or abroad ("for UK companies").
+  (consumer, business) plus the market. For local services the market is the town ("in Gothenburg").
+  For a seller that works nationwide or abroad it is the country ("for UK companies").
 - Whether the headline works without the image and without the rest of the page.
 - Whether the first screen promises something the rest of the page takes back (a "Fixed price"
   stamp on an example that later "depends on condition"). Log that finding under law 4.
@@ -150,8 +150,8 @@ Check:
 ## 3. Start from the reader
 
 Origin: Halbert, "the starving crowd": the right audience beats better copy (confirmed).
-Schwartz, *Breakthrough Advertising* (1966): copy channels a desire that already exists, and
-must match the reader's awareness level in five steps: unaware, problem aware, solution aware,
+Schwartz, *Breakthrough Advertising* (1966): copy channels a desire that already exists. It
+must match the reader's awareness level. The five steps are: unaware, problem aware, solution aware,
 product aware, most aware (confirmed).
 
 Check:
@@ -161,10 +161,10 @@ Check:
 - Ads without Search Console: derive the level from the audience or campaign goal if given
   (retargeting = product aware, cold audience = problem aware). Otherwise state the assumption.
 - The reader's words on the page: take the five biggest query words in Search Console that are
-  not place or service names ("subscription", "book", "urgent", "price") and search the page for
-  them. A word with more than 10 % of impressions and 0 hits on the page is a Medium finding,
+  not place or service names ("subscription", "book", "urgent", "price"). Search the page for
+  them. A word with more than 10 % of impressions and 0 matches on the page is a Medium finding,
   High above 25 %. Place names in Search Console that the page never mentions become a question
-  to the client: does the firm work there?
+  to the customer: does the firm work there?
 - Count a sentence as "about the company" when its subject is we, our or the company name.
   Reviews and source lines do not count. Write the count in the finding.
 
@@ -178,32 +178,32 @@ Check:
 ## 4. Give the reason, with proof
 
 Origin: John E. Kennedy (1904): advertising is "salesmanship in print", and every claim needs a
-reason (confirmed). Studies from 2025 (Journal of Retailing and Consumer Services; Journal of
+reason (confirmed). Studies from 2025 (Journal of Retailing and Consumer Services, Journal of
 Interactive Advertising): ads labelled as AI-generated got lower trust (confirmed in summaries,
 effect size unconfirmed).
 
 Check:
 
-- Each promise ("best", "fast", "quality") against a reason or proof nearby: a number, a review
+- Each promise ("best", "fast", "quality") against a reason or evidence nearby: a number, a review
   with a name, a certification, a guarantee with terms, a real photo.
 - Generic phrases that could sit on any competitor's site.
 - **Critical** is a claim about contracts, tax or business registration, insurance,
-  certification, guarantee or employees that the product docs contradict, give no support for,
-  or list as unanswered. An unsupported claim about staffing ("the same cleaner every time",
-  "the same team") is **High**. External site with no docs: look for proof on the page and in
+  certification, guarantee or employees. It is Critical when the product docs contradict it,
+  give no support for it, or list it as unanswered. An unsupported claim about staffing ("the same cleaner every time",
+  "the same team") is **High**. External site with no docs: look for evidence on the page and in
   public sources (review sites, company registers, schema). If nothing turns up, the same
   grading applies.
 - Contradictions between pages (step 2b in SKILL.md) belong to this law.
 - One Critical finding under this law caps its score at 4.
 - A guarantee does not prove an absolute claim. "Always happy customers" does not become true
-  through a "satisfaction guarantee"; the guarantee is risk reversal under law 9.
-- A review that is the company's own text, or has no name and town, does not count as proof.
+  through a "satisfaction guarantee". The guarantee is risk reversal under law 9.
+- A review that is the company's own text, or has no name and town, does not count as evidence.
 
 | Score | Criterion |
 |---|---|
-| 10 | Every main promise has a concrete proof next to it |
-| 7 | Every main promise has a proof that supports that exact promise, but the proof sits far from it |
-| 4 | At least one main promise lacks proof that supports it. A star rating supports happy customers, not promises about staffing, condition or guarantees |
+| 10 | Every main promise has concrete evidence next to it |
+| 7 | Every main promise has evidence that supports that exact promise, but the evidence sits far from it |
+| 4 | At least one main promise lacks evidence that supports it. A star rating supports happy customers, not promises about staffing, condition or guarantees |
 | 0 | Only claims |
 
 ## 5. Concrete benefit, with an exact number
@@ -252,7 +252,7 @@ Check:
 
 ## 7. Write for sound off (video)
 
-Applies to moving images. Origin: Meta's guidelines treat captions as required. "85 % watch
+Applies to moving images. Origin: Meta's rules treat captions as required. "85 % watch
 without sound" is repeated everywhere but has no primary source (unconfirmed). TikTok is more
 often played with sound on.
 
@@ -297,12 +297,12 @@ Check:
 - Ad buttons come from the platform's fixed list (Meta: for example "Learn more", "Book now",
   "Get quote", "Contact us"). Suggest only a label from that list and put the precise promise in
   the headline or text.
-- Whether the CTA shows on the first mobile screen and after each proof section.
+- Whether the CTA shows on the first mobile screen and after each evidence section.
 - Risk the reader carries: lock-in, unknown price, what happens after the click. Is there a
   guarantee, price guarantee or "no lock-in" in text near the CTA?
 - Does the risk reversal answer the risk the reader has for this service? Moving out: the final
   inspection. Regular home cleaning: lock-in and keys. Payment up front: what happens if the
-  customer rejects the sketch. "No lock-in" on a one-off purchase answers no risk.
+  customer rejects the draft. "No lock-in" on a one-off purchase answers no risk.
 - Does the CTA promise something the next step does not keep ("price within 24 hours" when the
   price comes 24 hours after a phone call)? Read the page the button leads to.
 - Links to other companies in the same trade, anywhere on the page, lead the reader away from
@@ -326,11 +326,11 @@ with no known domain or ad account: `n/a`, and the report still proposes a test.
 
 - Look for tracking in the repo, if you have it:
   `grep -rnE "capture\(|gtag\(|dataLayer|fbq\(|posthog|lead_form_submit|phone_click|send_to:" <repo>/src`.
-  Tracking often sits in a shared client file, not in the page.
+  Tracking often sits in a shared customer file, not in the page.
 - Count real events in your analytics tool for the last 90 days. PostHog example:
   `select event, count() from events where properties.$host like '%<domain>%' and timestamp > now() - interval 90 day group by event order by count() desc`.
   GA4: the `eventName` dimension with `eventCount` over the same window. Code that tracks but
-  shows 0 events in 90 days counts as unmeasured; the key is probably missing in production. A
+  shows 0 events in 90 days counts as unmeasured. The key is probably missing in production. A
   button click or a submitted form both count as measured. Note CTA paths without tracking, such
   as anchor links the event does not catch.
 - Earlier tests: search `CHANGELOG.md` for "test", "variant", "A/B", and list experiments in the
@@ -339,7 +339,7 @@ with no known domain or ad account: `n/a`, and the report still proposes a test.
   `posthog`, `fbq(`, `dataLayer`). Code exists but conversions cannot be seen: at most 4.
 - The report proposes a test for the critical finding: one variant, one metric. If the site has
   fewer than 100 conversions a month, propose a before/after comparison over four weeks with
-  dates and a metric, because an A/B test will not reach an answer in time. (The 100 limit is a
+  dates and a metric. An A/B test will not reach an answer in time. (The 100 limit is a
   rule of thumb.)
 
 | Score | Criterion |

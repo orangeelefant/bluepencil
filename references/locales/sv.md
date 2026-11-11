@@ -4,10 +4,20 @@ Read this file when the page is in Swedish. It adds Swedish form, word lists and
 the rules in `../laws.md`. Rewrites stay in Swedish. Run `scripts/check.py --lang sv` (the
 script guesses Swedish when the text has å, ä or ö and more Swedish than English function words).
 
-Swedish-mode checks: absolute (S1), stock-phrase (S4, S5), nominalization (S4), not-x-but-y (S6),
-colon-reveal (S7), english-leftover, decimal-point, serial-comma, plural-error, unit-format and
-title-case-heading (all S12), question-heading (S9), invisible-char (S12), long-paragraph
-(law 2), even-rhythm (S10), and the we-sentence share on the summary line (S3).
+Swedish-mode checks:
+
+- absolute (S1)
+- stock-phrase (S4, S5)
+- nominalization (S4)
+- not-x-but-y (S6)
+- colon-reveal (S7)
+- english-leftover, decimal-point, serial-comma, plural-error, unit-format and
+  title-case-heading (all S12)
+- question-heading (S9)
+- invisible-char (S12)
+- long-paragraph (law 2)
+- even-rhythm (S10)
+- the we-sentence share on the summary line (S3)
 
 ## S12 Swedish form
 
@@ -22,10 +32,12 @@ title-case-heading (all S12), question-heading (S9), invisible-char (S12), long-
 | Space before percent and units | 15 %, 24 timmar, 2,3 gånger | 15%, 24h, 2,3x |
 | Swedish button labels | Skicka förfrågan, Läs mer | Submit, Read more, Book now |
 
-Dashes are allowed in Swedish client copy (page copy, meta descriptions, blog posts, UI text, alt
+Dashes are allowed in Swedish customer copy (page copy, meta descriptions, blog posts, UI text, alt
 text). The Swedish standard per Svenska skrivregler is a spaced en dash (" – "). An em dash (—)
 is replaced with a spaced en dash. Use it as a Swedish writer would: sparingly, and never as the
-universal connector. This is the locale exception to §8 in `../plain-writing.md`; other Swedish
+universal connector.
+
+This is the locale exception to §8 in `../plain-writing.md`. Other Swedish
 text (chat replies, commit messages, internal docs) keeps the full dash ban. Proper nouns and abbreviations in headings keep
 their capitals ("Städning i Göteborg", "SEO och webb").
 
@@ -38,7 +50,7 @@ register: "få" never becomes "erhålla".
 
 ## S4 Swedish stock words
 
-Flag these, then replace them with the customer's own word or a proof:
+Flag these, then replace them with the customer's own word or evidence:
 
 skräddarsydd, helhetslösning, sömlös, smidig, i framkant, nästa nivå, brinner för, passion,
 engagemang, engagerade, högkvalitativ, hög kvalitet, marknadsledande, marknadens ledande,
@@ -51,7 +63,7 @@ flyttstädning" stays, because readers search for "flyttstädning". Pass extra s
 check.py with `--service "a,b"`.
 
 S3 wins over S4. If readers search for the word ("skräddarsydd hemsida" with impressions in
-Search Console), it stays, with a proof next to it.
+Search Console), it stays, with evidence next to it.
 
 ## S5 Swedish empty calls to action
 
@@ -70,7 +82,7 @@ happens after it: "Skicka adressen, så får du ett fast pris inom 2 timmar."
 ## Trade terms (S14) and trust claims (law 4)
 
 - **RUT** (rutavdrag): a tax deduction for household services. The buyer pays half of the labour
-  cost; the firm claims the rest from Skatteverket. Explain it once as "RUT halverar
+  cost. The firm claims the rest from Skatteverket. Explain it once as "RUT halverar
   arbetskostnaden", with Skatteverket as source.
 - **ROT** (rotavdrag): the same mechanism for repair and renovation labour, at the rate
   Skatteverket sets for the year. Check the current rate at skatteverket.se before you quote it.
@@ -78,7 +90,7 @@ happens after it: "Skicka adressen, så får du ett fast pris inom 2 timmar."
   contributions. An unsupported F-skatt claim is Critical under law 4.
 - **Kollektivavtal** (collective agreement), **ansvarsförsäkring** (liability insurance) and
   **anställda** (employees): unsupported claims are Critical under law 4.
-- Public sources for proof on external sites: Reco (reviews), Allabolag (company register, F-skatt
+- Public sources for evidence on external sites: Reco (reviews), Allabolag (company register, F-skatt
   status, employee count), and the page's own schema.
 
 ## Plain writing in Swedish
@@ -97,10 +109,16 @@ these equivalents. S6 and S7 above already cover the Swedish contrast and colon-
 | §17 Borrowed authority | *experter menar*, *enligt branschrapporter* |
 | §18 Avoiding is, are, has | *utgör*, *fungerar som* |
 
-§9 qualifiers that make a claim true, in Swedish: a lower bound ("från 4 900 kr"), an upper bound
-("upp till 30 %"), an approximation ("cirka 200 kunder"), a condition ("om du bokar före 1 maj")
-and a scope ("i Göteborg"). A draft that turns "Hemsida från 4 900 kr" into "Hemsida för 4 900 kr"
-breaks the claim; "från" stays because the price varies.
+§9 qualifiers that make a claim true, in Swedish, are these:
+
+- a lower bound ("från 4 900 kr")
+- an upper bound ("upp till 30 %")
+- an approximation ("cirka 200 kunder")
+- a condition ("om du bokar före 1 maj")
+- a scope ("i Göteborg")
+
+ A draft that turns "Hemsida från 4 900 kr" into "Hemsida för 4 900 kr"
+breaks the claim. "från" stays because the price varies.
 
 ## Swedish examples
 

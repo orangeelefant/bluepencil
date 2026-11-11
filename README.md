@@ -39,7 +39,7 @@ A reader on a phone has to scroll before seeing an offer, a town or a price.
 **Rewrite** (64 %, New text):
 > End-of-tenancy cleaning in Gothenburg, fixed price from [PRICE: lowest fixed price]
 
-## Questions for the client
+## Questions for the customer
 
 - What is your lowest fixed price for end-of-tenancy cleaning?
 ```
@@ -92,8 +92,8 @@ Each finding gets a severity:
 - Low: polish.
 
 Rewrites keep prices, numbers, names, places, service names and customer quotes as they are. A
-missing fact becomes a placeholder and a question for the client. Each rewrite is labelled by how
-much text it changes: up to 50 % is a rewrite, over 50 % is new text, over 80 % needs a client
+missing fact becomes a placeholder and a question for the customer. Each rewrite has a label for the
+share of text that it changes. Up to 50 % is a rewrite. Over 50 % is new text. Over 80 % needs a customer
 decision.
 
 ## The ten laws
@@ -132,9 +132,9 @@ Locale details: `references/locales/en.md` and `references/locales/sv.md`.
 
 ## Plain writing, as an always-on rule
 
-`references/plain-writing.md` is the writing standard Blue Pencil's rewrites and reports follow:
-26 patterns of chatbot prose with before and after examples, a list of false positives, and an
-audit to run before delivering text. It also works as an always-on Claude Code rule, so every
+`references/plain-writing.md` is the writing standard for Blue Pencil's rewrites and reports. It holds
+26 patterns of chatbot prose with before and after examples. It holds a list of false positives. It holds an
+audit to run before delivering text. It also works as an always-on Claude Code rule. Then every
 reply, commit message and document the agent writes follows it:
 
 ```bash
@@ -151,16 +151,18 @@ python3 scripts/check.py page.md --json                    # machine-readable ou
 python3 scripts/check.py --compare original.md proposal.md # PASS or FAIL, exit 1 on FAIL
 ```
 
-The script prints one line per hit, a summary line with the detected language, and the share of
+The script prints one line for each match. It prints a summary line with the detected language.
+
+It also prints the share of
 sentences that start with "We", "Our" or the company name. `--compare` prints how much of the
-text changed, then FAIL for each check that has more hits in the proposal. Hits are candidates.
+text changed. Then it prints FAIL for each check that has more matches in the proposal. Matches are candidates.
 The reviewer decides which become findings.
 
 ## Limits
 
 - Source confidence varies. `references/laws.md` labels each number "confirmed" (primary source
   or classic book) or "unconfirmed" (secondary sources). Do not quote unconfirmed numbers to a
-  client as fact.
+  customer as fact.
 - Scores are guided judgment. Three independent runs on the same page spread up to 6 points
   before the scales were tightened in version 3.2. Compare scores from the same version.
 - Blue Pencil judges the text. It does not measure conversion.
@@ -173,9 +175,11 @@ Sugarman, John E. Kennedy, Michael Masterson and John Forde, E. St. Elmo Lewis, 
 Group, Pew Research Center and CXL.
 
 The language rules were synthesized from a study of these eight open-source rule sets. Six are
-MIT licensed. Humanizr/Humanizer and Turnitout-Humanizer state no license GitHub can detect. The
-laws and S1-S14 are restated in our own words. `references/plain-writing.md` is the exception: it
-builds on blader/humanizer v3.1.0 and copies substantial parts of its wording, under its MIT
+MIT licensed. Humanizr/Humanizer and Turnitout-Humanizer state no license that GitHub can detect.
+The laws and S1-S14 are in our own words.
+
+`references/plain-writing.md` is the exception.
+It builds on blader/humanizer v3.1.0 and copies substantial parts of its wording. It uses the MIT
 license (Copyright (c) 2025 Siqi Chen), which the file reproduces.
 
 - blader/humanizer

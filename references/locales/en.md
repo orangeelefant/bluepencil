@@ -43,7 +43,7 @@ Plain business words ("solution", "professional", "service") are not on the list
 finding only under S2, when the sentence fails the competitor test.
 
 S3 wins over S4. If readers search for the word ("bespoke kitchen" with impressions in Search
-Console), it stays, with a proof next to it.
+Console), it stays, with evidence next to it.
 
 ## S12 English form (manual checks)
 
@@ -60,14 +60,14 @@ check.py does not check these. Read for them.
 | Spelling variant matches the market | colour (UK), color (US) | mixed on one page |
 | Units | 24 hours, 15% or 15 percent, 2.3 times | 24h in body text, 2.3x in body text |
 
-A percent sign with no space ("15%") is standard English. Dashes in client copy follow the
+A percent sign with no space ("15%") is standard English. Dashes in customer copy follow the
 house style of the page. Flag only mixed use (em dash and spaced en dash on the same page).
 
 ## S14 English trade terms
 
 Explain at first use what the reader gains: VAT registration, licensed and insured, bonded, SEO,
 CTA, UX. Example: "We are licensed and insured" becomes "Our £5 million liability insurance
-covers any damage in your home." Check the number against the source; never invent it.
+covers any damage in your home." Check the number against the source. Never invent it.
 
 ## English examples
 

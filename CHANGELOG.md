@@ -2,6 +2,7 @@
 
 ## [Unreleased]
 - Docs: internal text rewritten to ASD-STE100 English.
+- Docs: SKILL.md, README, laws, locale files and plain-writing prose rewritten to ASD-STE100 English.
 
 ## [1.5.0] - 2026-11-04
 
