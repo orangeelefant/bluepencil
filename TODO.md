@@ -1,4 +1,4 @@
-# TODO
+# Task list
 
 ## Now
 
@@ -6,14 +6,14 @@
 
 ## Next
 
-- Fix the shared long-paragraph and even-rhythm checks for crawled stat tiles (7 false hits in English).
-- Fixture set: saved pages with expected hits, run on every change to check.py.
+- Fix the shared long-paragraph and even-rhythm checks for crawled stat tiles (7 false findings in English).
+- Add a fixture set: saved pages with expected findings. Run it on each change to `check.py`.
 
 ## Later
 
-- More locales (Norwegian, Danish, German).
+- Add more locales (Norwegian, Danish, German).
 
 ## Done (recent)
 
-- 2026-11-04: spread fix for laws 3, 4, 6 and 9 confirmed by the maintainer.
-- 2026-11-04: public release 1.4.0.
+- 2026-11-04: the maintainer approved the spread fix for laws 3, 4, 6 and 9.
+- 2026-11-04: public version 1.4.0.

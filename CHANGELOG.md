@@ -1,6 +1,7 @@
 # Changelog
 
 ## [Unreleased]
+- Docs: internal text rewritten to ASD-STE100 English.
 
 ## [1.5.0] - 2026-11-04
 
